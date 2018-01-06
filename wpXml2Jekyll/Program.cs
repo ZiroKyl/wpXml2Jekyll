@@ -1,9 +1,6 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
 using System.Windows.Forms;
 using System.Runtime.InteropServices;
-using wpXml2Jekyll.Properties;
 
 namespace wpXml2Jekyll
 {
@@ -33,7 +30,7 @@ namespace wpXml2Jekyll
                 var outputFolder = args[1];
 
                 var posts = new PostImporter().ReadWpPosts(wordpressXmlFile);
-                int count = new PostWriter().WritePostToMarkdown(posts, outputFolder);
+                int count = new PostWriter().WritePost(posts, outputFolder);
                 Console.WriteLine("Saved " + count + " posts");
             }
         }

@@ -1,9 +1,5 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
 using System.Windows.Forms;
-using System.IO;
 using System.Xml;
 
 namespace wpXml2Jekyll
@@ -47,9 +43,14 @@ namespace wpXml2Jekyll
                 return;
             }
 
-            var postCount = PostWriter.WritePostToMarkdown(xmlDocument, folderBrowserDialog1.SelectedPath);
+            var postCount = PostWriter.WritePost(xmlDocument, folderBrowserDialog1.SelectedPath);
 
             MessageBox.Show("Saved " + postCount + " posts");
         }
+
+		private void UIForm_Load(object sender, EventArgs e)
+		{
+
+		}
     }
 }
