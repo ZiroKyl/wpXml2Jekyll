@@ -39,6 +39,8 @@ namespace wpXml2Jekyll
 					string folderPath = AppendStatusToOutputFolder(outputFolder, postStatus);
                     CreateDirectoryIfDoesntExist(folderPath);
 
+					// Fix too expensive... Just rewrite in Go.
+
 					// .NET 2.0 Workaround for PathTooLongException https://www.codeproject.com/Articles/22013/NET-Workaround-for-PathTooLongException
 					// URI decode (use System.Uri.UnescapeDataString):
 					// - https://blogs.msdn.microsoft.com/yangxind/2006/11/08/dont-use-net-system-uri-unescapedatastring-in-url-decoding/

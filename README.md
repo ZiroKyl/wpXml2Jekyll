@@ -6,7 +6,11 @@ wpXml2Jekyll is a tool that converts your Wordpress XML file to individual [Jeky
 2. This tool **doesn't** require any database connection for post generation
 3. Hell, if you've downloaded the required files before, you may not need any internet connection
 
-## Usage
+## What is xmlWP2Jekyll?
+
+[xml**WP**2Jekyll](https://github.com/ASOIU/9bit/tree/xmlwp2jekyll) is a extended, _re_written in [Go](https://golang.org) version of wpXml2Jekyll.
+
+## wpXml2Jekyll Usage
 
 You can download wpXml2Jekyll v1.2 from [here](https://github.com/theaob/wpXml2Jekyll/raw/v1.2/wpXml2Jekyll.exe) as a compiled binary or for the [**releases** section](https://github.com/theaob/wpXml2Jekyll/releases). You can run the executable as a windows application or run it on console as:
 ```
@@ -16,15 +20,15 @@ wpXml2Jekyll [wordpress export file] [output folder]
 
 It may **look** weird but it is actually very self explanatory.
 
-## Build Status
+## wpXml2Jekyll Build Status
 
 [![Build status](https://ci.appveyor.com/api/projects/status/dxg73fkekcl49r80)](https://ci.appveyor.com/project/theaob/wpxml2jekyll)
 
-## Contributing
+## wpXml2Jekyll Contributing
 
 I'd love to have some feedback
 
-## Licence
+## wpXml2Jekyll Licence
 
 (The MIT License)
 
